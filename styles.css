@@ -1,0 +1,257 @@
+body {
+  background-image: url('dawid-zawila--G3rw6Y02D0-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Fixes the background image */
+  background-position: center; /* Optional: Centers the background image */
+  margin: 0;
+}
+
+.navbar {
+    position: absolute; /* Fix the navbar at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center align the items horizontally */
+    /* padding: 10px; Add padding for better appearance */
+  }
+  
+  .nav_links {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically center */
+  }
+  
+  .nav_links a {
+    text-decoration: none; /* Remove underline */
+    font-family: 'lato';
+    color: #ffffff; /* Link color */
+    margin: 0 20px; /* Add space between links */
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  /* Optional: Add hover effect */
+  .nav_links a:hover {
+    color: #1E90FF; /* Change color on hover */
+    
+  }
+  
+  
+  .navimg{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 400px;
+    
+  }
+  .nl{
+    margin-right: 80px;
+    font-size: 50px;
+  }
+  
+  .nav_links a {
+    text-decoration: none; /* Remove underline */
+    font-family: 'lato', sans-serif; /* Apply the desired font */
+    color: #ffffff; /* Link color */
+    margin: 0 20px; /* Add space between links */
+    font-size: 20px; /* Adjust font size */
+  }
+  
+  .donate-button {
+    float: right; /* Align to the right */
+    margin-top: 20px;
+    margin-right: 70px; /* Adjust the margin-right as needed */
+    font-size: 25px;
+  }
+  
+  .donate-link {
+    display: inline-block;
+    padding: 15px 30px; /* Increase padding for bigger size */
+    border-radius: 30px; /* Increase border-radius for rounder corners */
+    background-color: #1E90FF; /* Default background color */
+    color: #FFFFFF; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    
+  }
+  
+  .donate-link:hover {
+    background-color: #0a1b54; /* Change background color on hover */
+  
+
+
+  }
+  .heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: azure;
+    font-weight: bold;
+    /* padding: 30px; */
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .glowing-underline {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.glowing-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust the distance of the underline from the text */
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline */
+    background: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #00ffff, #0080ff, #8000ff, #ff00ff); /* Change the colors as needed */
+    animation: glowing-palette 3s infinite;
+}
+
+@keyframes glowing-palette {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 0; /* Adjust the value for the width of the color palette */
+    }
+}
+.flip-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+  margin-bottom: 10px;
+ 
+}
+
+.view {
+  width: 400px; /* Increase the width */
+  height: 300px; /* Increase the height */
+  margin: 10px;
+  float: left;
+  border: 10px solid #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+
+
+.view .mask, .view .content {
+  width: 100%; /* Set width to 100% */
+  height: 100%; /* Set height to 100% */
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.view-third .mask {
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  width: 100%; /* Set width to 100% */
+  height: 100%; /* Set height to 100% */
+  transform: translateY(-100%);
+  transition: all 0.2s 0.4s ease-in-out;
+}
+
+.view-third:hover .mask {
+  opacity: 1;
+  transition-delay: 0s;
+  transform: translateY(0);
+}
+
+.view img {
+  display: block;
+  position: relative;
+  /* max-width: 100%; 
+  max-height: 100%;  */
+}
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 20px 0 0 0;
+}
+
+.view p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+
+  color: #fff;
+  padding: 100px 20px 20px; /* Adjust padding */
+  text-align: left;
+}
+
+.view-third .mask {
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  transform: translate(460px, -100px) rotate(180deg);
+  transition: all 0.2s 0.4s ease-in-out;
+}
+
+.view-third h2 {
+  transform: translateY(-100px);
+  transition: all 0.2s ease-in-out;
+}
+
+.view-third p {
+  transform: translateX(300px) rotate(90deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.view-third:hover .mask {
+  opacity:1;
+  transition-delay: 0s;
+  transform: translate(0px, 0px);
+}
+
+.view-third:hover h2 {
+  transform: translateY(0px);
+  transition-delay: 0.5s;
+}
+
+.view-third:hover p {
+  transform: translateX(0px) rotate(0deg);
+  transition-delay: 0.4s;
+}
+
+.view a.info {
+  display: none; /* Hide the "Read More" link */
+}
+
+
+
+.footer {
+  background-color: #131313;
+  color: #ffffff;
+  padding: 20px;
+  
+  text-align: center;
+  
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 14px;
+}

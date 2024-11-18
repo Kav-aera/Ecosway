@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Ecosway</title>
+  <link rel="stylesheet" href="contact.css">
+  <style>
+    
+    .container {
+      max-width: 1200px;
+      margin: 100px auto 20px auto; /* Added top margin to create space for navbar */
+      padding: 20px;
+      text-align: center;
+      display: flex; /* Use flexbox */
+      justify-content: space-between; /* Align items with space between them */
+      align-items: flex-start; /* Align items at the start of the container */
+     
+    }
+    h1 {
+      font-size: 36px;
+      color: #FFD600; /* Yellow */
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: #fff4f4; /* Dark grey */
+      line-height: 1.6;
+    }
+    .contact-container {
+      background-color: rgba(255, 253, 231, 0.8); /* Yellow with 0.8 opacity */
+      border: 2px solid #FFD600; /* Yellow border */
+      padding: 20px;
+      border-radius: 10px;
+      box-sizing: border-box;
+      transition: transform 0.3s ease; /* Added transition for smooth animation */
+      width: 45%; /* Set width */
+      text-align: left; /* Align text to the left */
+     
+    }
+    .contact-container:hover {
+      transform: scale(1.1); /* Increase size on hover */
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container2 {
+      max-width: 1200px;
+      margin: 50px auto 20px auto; /* Added top margin to create space for navbar */
+      padding: 20px;
+      text-align: center;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: auto;
+      padding: 10px 20px;
+      background-color: #FFD600; /* Yellow */
+      color: #424242; /* Dark grey */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #FFEA00; /* Light yellow */
+    }
+    /* Image Styles */
+    .contact-image {
+      width: 45%; /* Set width */
+      margin-top: 20px;
+      border-radius: 10px;
+      border: 3px #FFD600 solid ;
+    }
+ 
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .animated {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav_links">
+        <!-- <a class="nl1"><img src="images/Ecosway.png" class="nav-img"> </a> -->
+        <div class='nl'><a href="1.HOME.HTML" class="nl">Home</a></div>
+        <div class='nl'><a href='2.Goal.html' class="nl">Goals</a></div>
+        <div class='nl'><a href='0.demo.html' class="nl">Tips</a></div>
+        <div class='nl'><a href="6.shop.html" class="nl">Shop</a></div>
+        <div class='nl'><a href="5.contact.html" class="nl">About us</a></div>
+        <div class='nl'><a href="4.login2.html" class="nl">Login</a></div>
+       
+    </div>
+    <div class="donate-button">
+        <a href="3.donate.html" class="donate-link">Donate</a>
+    </div>
+</nav>
+<div class="container animated">
+    <!-- Contact Form Container -->
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+
+    <!-- Image -->
+    <img src="images/eco.png" class="contact-image">
+</div>
+<div class="container2 animated">
+    <h1>About Us</h1>
+    <p>Welcome to Ecosway, where sustainability meets lifestyle. We are passionate about promoting eco-friendly living choices that benefit both people and the planet. Our mission is to provide sustainable solutions and inspire individuals to adopt green practices in their daily lives.</p>
+    <p>At Ecosway, we believe that every small action counts towards a greener future. From reducing plastic waste to supporting ethical sourcing, we are committed to making a positive impact on the environment. Join us in our journey towards a more sustainable world!</p>
+    
+    <!-- Contact Form Container -->
+</div>
+
+<footer class="footer">
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+        <!-- Add more social media icons as needed -->
+    </div>
+    <p class="footer-text">© 2024 Ecosway. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,246 @@
+/* Centering and styling images */
+body {
+  background-image: url('dawid-zawila--G3rw6Y02D0-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: Fixes the background image */
+  background-position: center; /* Optional: Centers the background image */
+  margin: 0;
+}
+
+.navbar {
+    position: absolute; /* Fix the navbar at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center align the items horizontally */
+    /* padding: 10px; Add padding for better appearance */
+  }
+  
+  .nav_links {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically center */
+  }
+  
+  .nav_links a {
+    text-decoration: none; /* Remove underline */
+    font-family: 'lato';
+    color: #ffffff; /* Link color */
+    margin: 0 20px; /* Add space between links */
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  /* Optional: Add hover effect */
+  .nav_links a:hover {
+    color: #1E90FF; /* Change color on hover */
+    
+  }
+  
+  
+  .navimg{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 400px;
+    
+  }
+  .nl{
+    margin-right: 80px;
+    font-size: 50px;
+  }
+  
+  .nav_links a {
+    text-decoration: none; /* Remove underline */
+    font-family: 'lato', sans-serif; /* Apply the desired font */
+    color: #ffffff; /* Link color */
+    margin: 0 20px; /* Add space between links */
+    font-size: 20px; /* Adjust font size */
+  }
+  
+  .donate-button {
+    float: right; /* Align to the right */
+    margin-top: 20px;
+    margin-right: 70px; /* Adjust the margin-right as needed */
+    font-size: 25px;
+  }
+  
+  .donate-link {
+    display: inline-block;
+    padding: 15px 30px; /* Increase padding for bigger size */
+    border-radius: 30px; /* Increase border-radius for rounder corners */
+    background-color: #1E90FF; /* Default background color */
+    color: #FFFFFF; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    
+  }
+  
+  .donate-link:hover {
+    background-color: #0a1b54; /* Change background color on hover */
+  
+
+
+  }
+  .heading{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: azure;
+    font-weight: bold;
+    /* padding: 30px; */
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .glowing-underline {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.glowing-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust the distance of the underline from the text */
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline */
+    background: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #80ff00, #00ff80, #00ffff, #0080ff, #8000ff, #ff00ff); /* Change the colors as needed */
+    animation: glowing-palette 3s infinite;
+}
+
+@keyframes glowing-palette {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 0; /* Adjust the value for the width of the color palette */
+    }
+}
+
+/* Centering and styling table */
+.table-container {
+  margin-top: 50px;
+  text-align: center;
+  opacity: 0;
+  animation: slideIn 1s ease forwards;
+}
+
+.stats-table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px; /* Rounder borders */
+  overflow: hidden; /* Ensure table does not overflow rounded borders */
+}
+
+.stats-table th, .stats-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: #333; /* Text color */
+}
+
+.stats-table th {
+  background-color: #ffd700; /* Bright yellow for table header */
+  color: #333; /* Text color */
+}
+
+.stats-table tbody tr:nth-child(odd) {
+  background-color: #ffeb3b; /* Lighter shade of yellow for odd rows */
+}
+
+.stats-table tbody tr:nth-child(even) {
+  background-color: #fff; /* White background for even rows */
+}
+
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  background-image:url("quino-al-mBQIfKlvowM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Centering and styling flexboxes */
+main {
+  max-width: 1200px; /* Increased max-width for better spacing */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px; /* Increased grid gap for better spacing */
+}
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Increased opacity for better visibility */
+  border-radius: 20px; /* Increased border radius for a smoother look */
+  padding: 30px; /* Increased padding for better spacing */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Increased box shadow for a subtle effect */
+  transition: transform 0.3s ease;
+  margin-bottom: 30px; /* Added margin at the bottom for spacing */
+}
+
+.statistic:hover {
+  transform: translateY(-10px); /* Adjusted hover effect for better interactivity */
+}
+
+img {
+  max-width: 100%; /* Adjusted max-width to ensure images fill the container */
+  height: auto;
+  border-radius: 20px; /* Increased border radius for smoother edges */
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+h2 {
+  color: #555;
+  font-size: 1.8rem; /* Increased font size for better readability */
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+
+
+.footer {
+  background-color: #131313;
+  color: #ffffff;
+  padding: 20px;
+  
+  text-align: center;
+  
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 14px;
+}

@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('dawid-zawila--G3rw6Y02D0-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  header, footer {
+    background-color: #f3f4f62f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  
+  main {
+    padding: 20px;
+  }
+  
+  .donate-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .donate-form {
+    background: linear-gradient(to bottom, #f0f0f0, #d8d8d8); /* Gradient background */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Transition for size change */
+  }
+  
+  .donate-form:hover {
+    transform: scale(1.05); /* Increase size on hover */
+  }
+  
+  .donate-form h2 {
+    margin-top: 0;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"],
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0a1b54;
+  }
+  /* Your existing CSS styles */
+/* Your existing CSS styles */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Ensure popup is on top of other elements */
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.home-link {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #1E90FF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.home-link:hover {
+  background-color: #0a1b54;
+}

@@ -1,0 +1,216 @@
+body {
+    background:  #efeced; 
+   
+    margin: 0;
+    
+  }
+  .main-img {
+    width: 100%; /* Set width to cover the entire width of its containing element */
+  }
+  
+  .navbar {
+    position: absolute; /* Fix the navbar at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center align the items horizontally */
+    /* padding: 10px; Add padding for better appearance */
+  }
+  
+  .nav_links {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically center */
+  }
+  
+  .nav_links a {
+    text-decoration: none; /* Remove underline */
+    font-family: 'lato';
+    color: #ffffff; /* Link color */
+    margin: 0 20px; /* Add space between links */
+    font-size: 16px; /* Adjust font size */
+  }
+  
+  /* Optional: Add hover effect */
+  .nav_links a:hover {
+    color: #1E90FF; /* Change color on hover */
+  }
+  
+  
+  .navimg{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-right: 400px;
+    
+  }
+  .nl{
+    margin-right: 80px;
+    font-size: 50px;
+  }
+  
+  .nav_links a {
+    text-decoration: none; /* Remove underline */
+    font-family: 'lato', sans-serif; /* Apply the desired font */
+    color: #ffffff; /* Link color */
+    margin: 0 20px; /* Add space between links */
+    font-size: 20px; /* Adjust font size */
+  }
+  
+  .donate-button {
+    float: right; /* Align to the right */
+    margin-top: 20px;
+    margin-right: 70px; /* Adjust the margin-right as needed */
+    font-size: 25px;
+  }
+  
+  .donate-link {
+    display: inline-block;
+    padding: 15px 30px; /* Increase padding for bigger size */
+    border-radius: 30px; /* Increase border-radius for rounder corners */
+    background-color: #1E90FF; /* Default background color */
+    color: #FFFFFF; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    
+  }
+  
+  .donate-link:hover {
+    background-color: #0a1b54; /* Change background color on hover */
+  }
+  
+  .top-image {
+    position: relative;
+    height: 700px; /* Adjust the height as needed */
+    text-align: center; /* Center the content horizontally */
+    overflow: hidden;
+  }
+  
+  .main-img {
+    position: absolute;
+    /* left: 50%; */
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+  .top-image {
+    position: relative;
+    text-align: center; /* Center the content horizontally */
+    overflow: hidden;
+  }
+  
+  .main-img {
+    width: 100vw; /* Set width to cover the entire viewport width */
+  }
+  
+  .text-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: flyIn 2s ease forwards;
+    opacity: 0;
+    font-size: 72px; /* Adjust font size as needed */
+    font-family: 'lato'; /* Use Open Sans font */
+  }
+  
+  
+  
+  @keyframes flyIn {
+    0% {
+      transform: translate(-50%, -50%) translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+  
+  .sub-text-animation {
+    position: absolute;
+    top: calc(50% + 50px); /* Adjust vertical position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: flyInSubText 2s ease forwards;
+    opacity: 0;
+    font-size: 24px; /* Adjust font size as needed */
+    font-family: 'lato'; /* Use Dancing Script font */
+  }
+  
+  @keyframes flyInSubText {
+    0% {
+      transform: translate(-50%, -50%) translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+ 
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    align-items: center;
+  }
+  
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; /* Allow flex items to wrap */
+      margin: 20px;
+  }
+  
+  .box {
+      background-color: rgba(238, 166, 215, 0.5);
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      flex: 0 0 calc(33.33% - 20px);
+      max-width: calc(33.33% - 20px);
+      margin: 10px;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .box img {
+      max-width: 100%;
+      border-radius: 10px;
+  }
+  
+  .box p {
+      color: #131313;
+      font-size: 16px;
+      margin-top: 10px;
+      font-family: 'georgia';
+  }
+  
+  .see-more {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 5px;
+      background-color: transparent;
+      border: 2px solid rgba(100, 55, 64, 0.801);
+      color: rgba(0, 0, 0);
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .see-more:hover {
+      background-color: rgba(92, 11, 66, 0.5);
+      color: #2e011f;
+  }
+  .hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }

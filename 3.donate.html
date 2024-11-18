@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate</title>
+  <link rel="stylesheet" href="donate.css"> <!-- Link your CSS file -->
+</head>
+<body>
+  <header>
+    <h1>Donate to Support Our Cause</h1>
+    <p>Your generous contribution helps us make a difference.</p>
+  </header>
+  
+  <main>
+    <section class="donate-form-container">
+      <!-- <h2>Make a Donation</h2> -->
+      <form id="donate-form" action="#" method="POST" class="donate-form">
+        <div class="input-group">
+          <label for="amount">Amount:</label>
+          <input type="number" id="amount" name="amount" step="0.01" min="0" required>
+          <select id="currency" name="currency" required>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+          <label for="message">Message (Optional):</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="button" id="donate-button">Donate Now</button> <!-- Change type to "button" -->
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thank you for your support!</p>
+  </footer>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <p>Thank you for your generous request for donation. Our team will contact you soon.</p>
+      <a href="1.HOME.HTML" class="home-link">Redirect to Homepage</a> <!-- Add anchor tag for redirecting to the home page -->
+    </div>
+  </div>
+   
+
+  <script src="donate.js"></script> <!-- Link your JavaScript file -->
+</body>
+</html>
